@@ -1,0 +1,291 @@
+// Variáveis
+$primary-color: #00195e
+$light-color: #f9f9f9
+$text-color: #333333
+$hover-color: #43ac9a
+$bg-section: #198754
+$titulo: #a3bcff
+$titulo-intro: #5885ff
+$dark: #000000
+$overlay-color: rgba(0, 0, 0, 0.5)
+$title-size: 3rem
+$description-size: 1.5rem
+$button-color: #43ac9a
+
+html
+  scroll-behavior: smooth
+
+// Body
+body
+  font-family: Arial, sans-serif
+  color: $light-color
+  margin-bottom: 0
+
+.i
+  width: 10px
+  height: 10px
+
+// Header
+header
+  background-color: $dark
+  margin-bottom: 0
+  position: relative
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 10vh
+  padding: 0 10px
+  z-index: 10
+  top: 0
+  left: 0
+  right: 0
+
+  h1
+    font-size: 2.5rem
+    color: #fff
+
+  a
+    text-transform: initial
+    font-weight: 300
+    font-size: 20px
+    text-decoration: none
+    margin-left: 15px
+    color: $light-color
+
+  p
+    color: lighten($primary-color, 20%)
+
+// Seções
+#fontes-energia, #contribuir
+  h2
+    color: $primary-color
+    font-weight: bold
+
+
+#introducao
+  background-image: url(/img/energialimpa.jpg)
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  padding: 20vh 0px
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 20px
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%)
+    pointer-events: none
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.678)
+
+  .content
+    position: relative
+    z-index: 1
+    color: #fff
+    text-align: center
+
+    h2
+      font-size: 2.5rem
+      font-weight: bold
+      color: $titulo
+
+    p
+      font-size: 1.25rem
+      max-width: 700px
+      margin: 0 auto
+
+// Benefícios
+#beneficios
+  .center
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-direction: row
+
+  .card
+    margin: 15px
+    transition: transform 0.2s ease
+
+    &:hover
+      transform: scale(1.05)
+
+  .card-header
+    background-color: $titulo
+
+  @media screen and (max-width: 780px)
+    .center
+      display: flex
+      justify-content: center
+      align-content: center
+      flex-direction: column
+
+  h2
+    color: $titulo-intro
+    font-weight: bold
+
+  .col-md-4
+    padding: 15px
+
+    h5
+      color: ($primary-color, 10%)
+
+// Fontes de energia
+#fontes-energia a
+  color: $primary-color
+  text-decoration: none
+
+.card
+  transition: transform 0.3s ease
+
+  &:hover
+    transform: scale(1.05)
+
+  width: 280px
+
+.row
+  display: flex
+  justify-content: center
+
+.cards
+  max-width: 280px
+  margin: 10px
+  display: flex
+  justify-content: center
+
+.card-img-top
+  max-width: 280px
+  max-height: 305.5px
+  min-width: 280
+  min-height: 305.5px
+
+// Desafios
+#desafios
+  background-color: $titulo
+
+  h2
+    color: $primary-color
+    font-weight: bold
+
+// Explicação das energias
+.fullscreen-section
+  position: relative
+  width: 100%
+  height: 100vh
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $light-color
+  text-align: center
+
+  // Sobreposição para melhorar a legibilidade
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $overlay-color
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    padding: 20px
+    box-sizing: border-box
+
+
+  // Estilo do título
+  .title
+    font-size: $title-size
+    margin-bottom: 10px
+
+  // Estilo da descrição
+  .description
+    font-size: $description-size
+    max-width: 800px
+
+    li
+      position: relative
+      margin-left: auto
+      margin-right: auto
+      width: 300px
+
+
+
+
+// Estilos do formulário
+form
+  background-color: #fff
+  padding: 30px
+  border-radius: 8px
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+  max-width: 350vh
+  margin: 0 auto
+
+  .form-label
+    font-weight: bold
+    color: $dark
+  
+
+  .btn
+    background-color: $primary-color
+    border: none
+    color: white
+    padding: 10px 20px
+    font-size: 16px
+    border-radius: 5px
+    cursor: pointer
+    transition: background-color 0.3s ease
+
+    &:hover
+      background-color: darken($primary-color, 10%)
+  
+  .form-control
+    border-radius: 5px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+
+  .form-control:focus
+    border-color: $primary-color
+    box-shadow: 0 0 8px rgba(67, 172, 154, 0.4)
+
+
+
+
+
+
+// Footer
+footer
+  background-color: $primary-color
+  color: $light-color
+  
+
+.navbar-nav .nav-link
+  font-weight: 600
+  font-size: 1.1rem
+  color: #007bff
+  transition: color 0.3s ease, transform 0.3s ease
+
+.navbar-nav .nav-link:hover
+  color: $hover-color
+  transform: translateY(-2px)
+
+.navbar-nav .nav-link.active
+  color: $hover-color
+  font-weight: 700
+
+.navbar-nav .nav-item
+  margin-left: 10px
+  margin-right: 10px
