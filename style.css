@@ -13,23 +13,22 @@ body {
   height: 10px;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 header {
   background-color: #000000;
-  margin-bottom: 0;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  padding: 0 10px;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 header h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #f9f9f9;
+}
+header .boxi {
+  background-color: #000000;
 }
 header a {
   text-transform: initial;
@@ -37,10 +36,10 @@ header a {
   font-size: 20px;
   text-decoration: none;
   margin-left: 15px;
-  color: #f9f9f9;
+  color: #a3bcff;
 }
-header p {
-  color: #0034c4;
+header img {
+  width: 10vh;
 }
 
 #fontes-energia h2, #contribuir h2 {
@@ -114,6 +113,7 @@ header p {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    align-items: center;
   }
 }
 #beneficios h2 {
@@ -181,7 +181,6 @@ header p {
   text-align: center;
 }
 .fullscreen-section .overlay {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -193,6 +192,17 @@ header p {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 780px) {
+  .fullscreen-section .overlay {
+    flex-direction: column;
+  }
+  .fullscreen-section p {
+    text-align: center;
+  }
+  .fullscreen-section .description {
+    width: 400px;
+  }
 }
 .fullscreen-section .title {
   font-size: 3rem;

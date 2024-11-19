@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
   <meta charset="UTF-8">
@@ -7,94 +8,99 @@
   <title>Ohmni - Um futuro sustentável.</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+  <link rel="shortcut icon" href="img/minilogo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 
 
   <!-- Header -->
   <header class="text-white text-center py-4">
-    
-    <a href="#">OHMNI</a>
+    <a href="#inicio"><img src="img/logo.png" alt="Logo"></a>
     <nav class="navbar navbar-expand-lg navbar-light">
-
-  
-        <div class="container-fluid">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto ">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#inicio">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#beneficios">Benefícios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#fontes-energia">Fontes de energia limpa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contribuir">Contribuição</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#beneficios">Benefícios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                Fontes de energia
+              </a>
+              <ul class="boxi w-100 dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="text-white" href="#solar">Energia Solar</a></li>
+                <li><a class="text-white" href="#eolica">Energia Eólica</a></li>
+                <li><a class="text-white" href="#geotermica">Energia Geotérmica</a></li>
+                <li><a class="text-white" href="#hidreletrica">Energia Hidrelétrica</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
 
-
   <!-- Introdução -->
-  
+
   <div id="introducao" class="container-fluid text-white text-center">
 
-          <div class="content">
-              <h2 class="mb-4">O que é Energia Limpa?</h2>
-              <p>A energia limpa é aquela obtida de fontes renováveis e com baixo impacto ambiental. Ela desempenha um papel crucial na redução da poluição e na promoção de um futuro sustentável.</p>
-           </div>
+    <div class="content">
+      <h2 class="mb-4">O que é Energia Limpa?</h2>
+      <p>A energia limpa é aquela obtida de fontes renováveis e com baixo impacto ambiental. Ela desempenha um papel
+        crucial na redução da poluição e na promoção de um futuro sustentável.</p>
+    </div>
 
-   </div>
-  
-  
+  </div>
+
+
   <!-- Benefícios da Energia Limpa -->
   <section id="beneficios" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Benefícios das Energias Limpas</h2>
-      
+
       <div class=" center text-center">
 
         <div class="card">
-            <div class="card-header">Redução de Emissões</div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>As fontes de energia limpa ajudam a reduzir os gases do efeito estufa e poluição.</p>
-              </blockquote>
-            </div>
+          <div class="card-header">Redução de Emissões</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>As fontes de energia limpa ajudam a reduzir os gases do efeito estufa e poluição.</p>
+            </blockquote>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="card-header">Preservação de Recursos</div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Elas utilizam recursos renováveis e ajudam na preservação ambiental.</p>
-              </blockquote>
-            </div>
+        <div class="card">
+          <div class="card-header">Preservação de Recursos</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Elas utilizam recursos renováveis e ajudam na preservação ambiental.</p>
+            </blockquote>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="card-header">Sustentabilidade</div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Promovem o uso consciente e sustentável da energia para as próximas gerações.</p>
-              </blockquote>
-            </div>
+        <div class="card">
+          <div class="card-header">Sustentabilidade</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Promovem o uso consciente e sustentável da energia para as próximas gerações.</p>
+            </blockquote>
           </div>
+        </div>
 
 
       </div>
@@ -116,7 +122,8 @@
           <img src="img/energiasolar.jpg" class="card-img-top" alt="Energia Solar">
           <div class="card-body">
             <h5 class="card-title">Energia Solar</h5>
-            <p class="card-text">A energia solar é obtida através da luz e do calor do sol, sendo uma fonte renovável e abundante.</p>
+            <p class="card-text">A energia solar é obtida através da luz e do calor do sol, sendo uma fonte renovável e
+              abundante.</p>
             <a href="#solar">Saiba mais <i class="bi bi-caret-down-fill"></i> </a>
           </div>
         </div>
@@ -130,7 +137,8 @@
           <img src="img/energiaeolica.jpg" class="card-img-top" alt="Energia Eólica">
           <div class="card-body">
             <h5 class="card-title">Energia Eólica</h5>
-            <p class="card-text">Utiliza o vento para gerar eletricidade, uma opção limpa e de baixo impacto ambiental.</p>
+            <p class="card-text">Utiliza o vento para gerar eletricidade, uma opção limpa e de baixo impacto ambiental.
+            </p>
             <a href="#eolica">Saiba mais <i class="bi bi-caret-down-fill"></i> </a>
           </div>
         </div>
@@ -143,20 +151,22 @@
           <img src="img/energiageotermica.jpg" class="card-img-top" alt="Energia Eólica">
           <div class="card-body">
             <h5 class="card-title">Energia Geotérmica</h5>
-            <p class="card-text">A energia geotérmica é uma fonte de energia renovável e limpa que se origina do calor do interior da Terra.</p>
+            <p class="card-text">A energia geotérmica é uma fonte de energia renovável e limpa que se origina do calor
+              do interior da Terra.</p>
             <a href="#geotermica">Saiba mais <i class="bi bi-caret-down-fill"></i> </a>
           </div>
         </div>
       </div>
 
-      
+
       <!-- Energia Hidrelétrica -->
       <div class="cards col-md-4">
         <div class="card h-100">
           <img src="img/energiahidraletrica.jpg" class="card-img-top" alt="Energia Hidrelétrica">
           <div class="card-body">
             <h5 class="card-title">Energia Hidrelétrica</h5>
-            <p class="card-text">Gera eletricidade a partir da água em movimento, uma das fontes mais usadas globalmente.</p>
+            <p class="card-text">Gera eletricidade a partir da água em movimento, uma das fontes mais usadas
+              globalmente.</p>
             <a href="#hidreletrica">Saiba mais <i class="bi bi-caret-down-fill"></i> </a>
           </div>
         </div>
@@ -168,110 +178,114 @@
 
 
 
-    <!-- Fontes de energia explicados -->
+  <!-- Fontes de energia explicados -->
 
   <!-- Energia Solar explicada -->
-   <section class="explicacoes">
-  <section id="solar" class="fullscreen-section" style="background-image: url('img/fundosolar.jpg');">
+  <section class="explicacoes">
+    <section id="solar" class="fullscreen-section" style="background-image: url('img/fundosolar.jpg');">
       <div class="overlay">
-      <h1 class="title">Energia Solar</h1>
-      <ul class="description" dir="rtl" style='text-align:right; width:50%;'>
-        <li>É uma fonte energética renovável gerada por meio do calor emitido pela radiação solar.</li>
-        <li>Sua principal vantagem é o seu baixo impacto ambiental no meio, sendo assim classificada como uma fonte energética limpa.</li>
-        <li>É altamente dependente das condições geográficas e climáticas das zonas de produção energética.</li>
-      </ul>
-    </div>
-  </section>
-
-  
-
-  <!-- Energia Eólica explicada -->
-  <section id="eolica" class="fullscreen-section" style="background-image: url('img/fundoeolica.jpg');">
-    <div class="overlay">
-      <h1 class="title">Energia Eólica</h1>
-      <ul class="description" dir="rtl" style='text-align:right; width:50%;'>
-        <li>É a energia gerada da força dos ventos.</li>
-        <li>Os maiores produtores de energia eólica no Brasil são os estados da Bahia, Rio Grande do Norte e Ceará.</li>
-        <li>Em escala mundial, destacam-se a China, os Estados Unidos e a Alemanha. O Brasil aparece como 7º maior em capacidade instalada.</li>
-      </ul>
-    </div>
-  </section>
+        <h1 class="title">Energia Solar</h1>
+        <div class="description">
+          <p>É uma fonte energética renovável gerada por meio do calor emitido pela radiação solar.</p>
+          <p>Sua principal vantagem é o seu baixo impacto ambiental no meio, sendo assim classificada como uma fonte
+            energética limpa.</p>
+          <p>É altamente dependente das condições geográficas e climáticas das zonas de produção energética.</p>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- Energia Geotérmica explicada -->
-  <section id="geotermica" class="fullscreen-section" style="background-image: url('/img/fundogeotermica.jpg');">
+
+    <!-- Energia Eólica explicada -->
+    <section id="eolica" class="fullscreen-section" style="background-image: url('img/fundoeolica.jpg');">
       <div class="overlay">
-      <h1 class="title">Energia Geotérmica</h1>
-      <ul class="description" dir="rtl" style='text-align:right; width:50%;'>
-        <li>É a energia gerada da força dos ventos.</li>
-        <li>Os maiores produtores de energia eólica no Brasil são os estados da Bahia, Rio Grande do Norte e Ceará.</li>
-        <li>Em escala mundial, destacam-se a China, os Estados Unidos e a Alemanha. O Brasil aparece como 7º maior em capacidade instalada.</li>
-      </ul>
-    </div>
-  </section>
+        <h1 class="title">Energia Eólica</h1>
+        <div class="description">
+          <p>É a energia gerada da força dos ventos.</p>
+          <p>Os maiores produtores de energia eólica no Brasil são os estados da Bahia, Rio Grande do Norte e Ceará.</p>
+          <p>Em escala mundial, destacam-se a China, os Estados Unidos e a Alemanha. O Brasil aparece como 7º maior em
+            capacidade instalada.</p>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- Energia Hidrelétrica explicada -->
-  <section id="hidreletrica" class="fullscreen-section" style="background-image: url('img/fundohidreletrica.jpg');">
+    <!-- Energia Geotérmica explicada -->
+    <section id="geotermica" class="fullscreen-section" style="background-image: url('/img/fundogeotermica.jpg');">
       <div class="overlay">
-      <h1 class="title">Energia Hidrelétrica</h1>
-      <ul class="description" dir="rtl" style='text-align:right; width:50%;'>
-        <li>É a energia gerada da força dos ventos.</li>
-        <li>Os maiores produtores de energia eólica no Brasil são os estados da Bahia, Rio Grande do Norte e Ceará.</li>
-        <li>Em escala mundial, destacam-se a China, os Estados Unidos e a Alemanha. O Brasil aparece como 7º maior em capacidade instalada.</li>
-      </ul>
-    </div>
+        <h1 class="title">Energia Geotérmica</h1>
+        <div class="description">
+          <p>A energia geotérmica ou geotermal é uma fonte renovável de energia, proveniente do calor interno do planeta Terra.</p>
+          <p>Fontes de água e vapor superaquecidos são utilizadas para a obtenção de energia geotérmica.</p>
+          <p>É utilizada na geração de eletricidade e para o aquecimento e resfriamento de residências e edifícios de modo geral.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Energia Hidrelétrica explicada -->
+    <section id="hidreletrica" class="fullscreen-section" style="background-image: url('img/fundohidreletrica.jpg');">
+      <div class="overlay">
+        <h1 class="title">Energia Hidrelétrica</h1>
+        <div class="description">
+          <p>A energia hidrelétrica é uma fonte de energia renovável que transforma a força da água em eletricidade.</p>
+          <p>A geração de energia hidrelétrica ocorre em usinas que utilizam a energia da água corrente para movimentar turbinas, que por sua vez transformam essa energia em eletricidade.</p>
+        </div>
+      </div>
+    </section>
   </section>
-</section>
 
 
-<!-- Formulário de contato -->
-<div class="container mt-5">
-  <h2 class="text-center mb-4 text-dark">Entre em Contato</h2>
-  
-  <form action="#" method="POST">
+  <!-- Formulário de contato -->
+  <div class="container mt-5" id="contato">
+    <h2 class="text-center mb-4 text-dark">Entre em Contato</h2>
+
+    <form action="#" method="POST">
       <div class="row">
-          <!-- Nome -->
-          <div class="col-md-6">
-              <div class="mb-3">
-                  <label for="nome" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
-              </div>
+        <!-- Nome -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
           </div>
+        </div>
 
-          <!-- Email -->
-          <div class="col-md-6">
-              <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Seu email" required>
-              </div>
+        <!-- Email -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
           </div>
+        </div>
       </div>
 
       <!-- Assunto -->
       <div class="mb-3">
-          <label for="assunto" class="form-label">Assunto</label>
-          <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem" required>
+        <label for="assunto" class="form-label">Assunto</label>
+        <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem" required>
       </div>
 
       <!-- Mensagem -->
       <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
       </div>
 
       <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
-  </form>
-</div>
+    </form>
+  </div>
 
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
+
+    <p>&copy; 2024 Ohmni. Todos os direitos reservados.</p>
+    <p>Marcela Torro | Matheus Vinícius | Matheus Queiroz</p>
+    
   </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
